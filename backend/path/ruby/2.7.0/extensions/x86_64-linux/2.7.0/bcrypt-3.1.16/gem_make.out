@@ -1,0 +1,23 @@
+current directory: /home/happydev/work/autheg/backend/path/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+/home/happydev/.rbenv/versions/2.7.5/bin/ruby -I /home/happydev/.rbenv/versions/2.7.5/lib/ruby/2.7.0 -r ./siteconf20220121-13341-xdu8kv.rb extconf.rb
+creating Makefile
+
+current directory: /home/happydev/work/autheg/backend/path/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/happydev/work/autheg/backend/path/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+gcc  -D__SKIP_GNU -I/home/happydev/.rbenv/versions/2.7.5/include     -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+wrapper.c:182:60: warning: ‘struct crypt_data’ declared inside parameter list
+ char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
+                                                            ^
+wrapper.c:182:60: warning: its scope is only this definition or declaration, which is probably not what you want
+linking shared-object bcrypt_ext.so
+
+current directory: /home/happydev/work/autheg/backend/path/ruby/2.7.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20220121-13341-hmir5c

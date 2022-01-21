@@ -1,0 +1,15 @@
+current directory: /home/happydev/work/autheg/backend/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/home/happydev/.rbenv/versions/2.7.5/bin/ruby -I /home/happydev/.rbenv/versions/2.7.5/lib/ruby/2.7.0 -r ./siteconf20220121-11970-10u0rlm.rb extconf.rb
+creating Makefile
+
+current directory: /home/happydev/work/autheg/backend/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/happydev/work/autheg/backend/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/happydev/work/autheg/backend/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20220121-11970-1vm5k55

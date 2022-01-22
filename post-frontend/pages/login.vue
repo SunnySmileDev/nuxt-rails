@@ -18,7 +18,8 @@
             <v-text-field v-model="password" label="Password" type="password" />
           </v-form>
           <v-card-actions>
-            <v-btn @click="login">Log in</v-btn>
+            <v-btn @click="login">Sign in</v-btn>
+            <v-btn @click="signup">Sign up</v-btn>
           </v-card-actions>
         </v-card-text>
       </v-card>
@@ -46,6 +47,23 @@ export default {
         }
       }).catch(e => {this.error = e + ''})
     },
+    signup: function () {
+      this.$axios.$post('/users/sign_up', {
+          user: {
+            email: this.email,
+            password: this.password
+          }
+        }),
+      this.$auth.login({
+        data: {
+          user: {
+            email: this.email,
+            password: this.password
+          }
+        }
+      }).catch(e => {this.error = e + ''})
+    },
+
     logout: function () {
       this.$auth.logout().catch(e => {this.error = e + ''})
     }

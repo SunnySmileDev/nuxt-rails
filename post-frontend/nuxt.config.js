@@ -50,6 +50,7 @@ export default {
   auth: {
     endpoints: {
       login:  { url: '/users/sign_in' },
+      signup:  { url: '/users/sign_up' },
       logout: { url: '/users/sign_out', method: 'delete' },
       user:   { url: '/users/current' }
     }
